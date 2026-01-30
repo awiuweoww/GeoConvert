@@ -97,7 +97,3 @@ Untuk memahami arsitektur dan desain sistem lebih lanjut, silakan merujuk ke dok
 3.  **[Sequence Diagram](docs/SEQUENCE_DIAGRAM.md)**: Alur proses inisialisasi aplikasi dan fitur konversi.
 
 ---
-
-## 👥 Tim Pengembang
-
-Dikembangkan khusus untuk **PT LEN** sebagai solusi Geospasial Modern.

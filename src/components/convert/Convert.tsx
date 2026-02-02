@@ -12,7 +12,7 @@ import Point from 'ol/geom/Point';
 import { Style, Icon } from 'ol/style';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Plus, Minus, Crosshair, X, RefreshCw, ArrowDownUp, AlertCircle, History, Trash2, MousePointer2 } from 'lucide-react';
-import { dmsToDd, ddToDms, formatDmsString, type DMS } from '../../services/CoordinateService';
+import { dmsToDd, ddToDms, formatDmsString, type DMS } from '../../services/coordinateService';
 
 interface SavedPoint {
     id: string;

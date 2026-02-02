@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Moon, Sun, MoveRight, BookOpen, Globe, Languages } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Convert from '../Convert/Convert';
-import Tutorial from '../Tutorial/Tutorial';
+import Convert from '../convert/Convert';
+import Tutorial from '../tutorial/Tutorial';
 
 /**
  * Komponen Navbar - Bilah navigasi melayang berbentuk kapsul.

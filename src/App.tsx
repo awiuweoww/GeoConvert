@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import SplashScreen from './components/UI/SplashScreen';
-import Home from './components/Home/Home';
+import SplashScreen from './components/ui/SplashScreen';
+import Home from './components/home/Home';
 
 /**
  * Komponen Utama Aplikasi (App).

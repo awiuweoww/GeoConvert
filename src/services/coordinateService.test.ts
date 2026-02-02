@@ -1,4 +1,4 @@
-import { dmsToDd, ddToDms, type DMS } from './CoordinateService';
+import { dmsToDd, ddToDms, type DMS } from './coordinateService';
 
 describe('CoordinateService', () => {
     describe('dmsToDd', () => {

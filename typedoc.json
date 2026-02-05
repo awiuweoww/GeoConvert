@@ -1,0 +1,13 @@
+{
+	"$schema": "https://typedoc.org/schema.json",
+	"entryPoints": ["./src/main.tsx"],
+	"entryPointStrategy": "expand",
+	"out": "docs",
+	"exclude": ["**/*.test.ts", "**/*.test.tsx", "node_modules"],
+	"plugin": [],
+	"name": "PTlen Documentation",
+	"includeVersion": true,
+	"hideGenerator": true,
+  	"theme": "default",
+	"readme": "README.md"
+}

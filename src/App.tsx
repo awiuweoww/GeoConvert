@@ -1,51 +1,32 @@
-import { useState, useEffect } from 'react';
-import SplashScreen from './components/ui/SplashScreen';
-import Home from './components/home/Home';
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
 
-/**
- * Komponen Utama Aplikasi (App).
- * Mengelola transisi dari Splash Screen ke halaman utama GeoConvert.
- * 
- * @component
- * @returns {JSX.Element} Elemen root aplikasi.
- */
-const App: React.FC = () => {
-  const [loading, setLoading] = useState(true);
-  const [progress, setProgress] = useState(0);
+import "./App.css";
 
-  useEffect(() => {
-    // Durasi loading disesuaikan (4 detik sesuai permintaan sebelumnya di metadata)
-    const totalDuration = 4000;
-    const intervalTime = 16; // 60fps
-    const step = 100 / (totalDuration / intervalTime);
-
-    const timer = setInterval(() => {
-      setProgress(prev => {
-        const next = prev + step;
-        if (next >= 100) {
-          clearInterval(timer);
-          // Transisi sedikit lebih lama untuk kehalusan visual
-          setTimeout(() => setLoading(false), 800);
-          return 100;
-        }
-        return next;
-      });
-    }, intervalTime);
-
-    return () => clearInterval(timer);
-  }, []);
+function App() {
+  const [count, setCount] = useState(0);
 
   return (
-    <div className="app-root w-full h-full min-h-screen bg-white">
-      {/* Jika loading true, tampilkan SplashScreen */}
-      {loading ? (
-        <SplashScreen progress={progress} />
-      ) : (
-        /* Jika loading false, tampilkan Halaman Utama */
-        <Home />
-      )}
-    </div>
+    <>
+      <div>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Rspack + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the React logo to learn more
+      </p>
+    </>
   );
-};
+}
 
 export default App;
